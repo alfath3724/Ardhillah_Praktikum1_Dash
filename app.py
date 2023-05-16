@@ -6,8 +6,9 @@ app = dash.Dash(__name__)
 
 app.layout = html.Div(children=[
   html.H1("Helo bozo"),
-  dcc.Input(id="input-text", type="input",
-            placeholder="Silahkan masukan text"),
+  dcc.Input(id="input-text",
+            type="input",
+            placeholder="Silahkan masukan pilihan suara"),
   html.Button("Kirim", id="submit-button", n_clicks=0),
   html.Div(id="output")
 ])
